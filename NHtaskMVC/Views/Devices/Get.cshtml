@@ -1,9 +1,9 @@
 ﻿@using NHtaskMVC.Models.DbEntities;
-@model IEnumerable<User>
+@model IEnumerable<Device>
 
 @{
     Layout = null;
-    ViewData["Title"] = "User form";
+    ViewData["Title"] = "ABOBA";
 }
 <!DOCTYPE html>
 <html>
@@ -12,20 +12,20 @@
     <title>Index</title>
 </head>
 <body>
-<h4>Customers</h4>
+<h4>Devices</h4>
 <hr/>
 <table>
     <tr>
-        <th>Phone</th>
-        <th>Name</th>
-        <th>Password</th>
+        <th>ID</th>
+        <th>BLD</th>
+        <th>UBG</th>
     </tr>
-    @foreach (var user in Model)
+    @foreach (var device in Model)
     {
         <tr>
-            <td>@user.Phone</td>
-            <td>@user.Name</td>
-            <td>@user.Password</td>
+            <td>@device.ID</td>
+            <td>@device.BLD</td>
+            <td>@device.UBG</td>
         </tr>
     }
 </table>

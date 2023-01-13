@@ -8,22 +8,10 @@ namespace NHtaskMVC.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    private UserDbContext Context { get; }
-    
-    public HomeController(UserDbContext _context)
-    {
-        this.Context = _context;
-    }
-    
     
     public IActionResult Index()
     {
-
-        var users = (from user in this.Context.Users.Take(10)
-            select user).ToList();
-        return View(users);
+        return View();
     }
     
     
