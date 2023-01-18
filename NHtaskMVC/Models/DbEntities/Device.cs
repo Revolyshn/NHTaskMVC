@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NHtaskMVC.Models.DbEntities;
 
+[Table("Device", Schema = "dbo")]
 public class Device
 {
     [Key]

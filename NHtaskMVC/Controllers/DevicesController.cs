@@ -39,9 +39,3 @@ public class DevicesController : Controller
         return View(devices);
     }
 }
-
-// TODO: УДАЛИТЬ
-public static class Testus
-{
-    public static List<Device>? Devices { get; set; } = new List<Device>();
-}
